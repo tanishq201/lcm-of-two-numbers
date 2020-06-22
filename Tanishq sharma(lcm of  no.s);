@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int lcm()
+{
+int a,b;
+static int m;
+m=m+b;
+if(m%a==0 && m%b==0)
+{
+return m;
+return lcm(a,b);
+}
+}
+int main()
+{
+int num1,num2,z;
+printf("\nenter the first number:");
+scanf("%d",&num1);
+printf("\nenter the second number:");
+scanf("%d",&num2);
+z=lcm();
+printf("\nlcm of two numbers is:%d",z);
+}
